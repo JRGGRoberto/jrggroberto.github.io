@@ -18,6 +18,16 @@
 }
 
 .element {
+	width: 520px;
+	background-color: #E8E8E8;
+	padding: 0;
+	border-radius:7px;
+	position: relative;	
+	left: center;
+    top: 50px;
+}
+
+.element1 {
 	width: 500px;
 	height: 105px;
 	padding: 1px;

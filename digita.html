@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>JRGG</title>
+	<link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+	
+	<!-- INICIO syntaxhighlighter -->
+ 
+    <script src="party/syntaxhighlighter3/scripts/shCore.js" type="text/javascript"></script>
+    <script src='party/syntaxhighlighter3/scripts/shBrushJScript.js' type='text/javascript'></script>
+    <script src='party/syntaxhighlighter3/scripts/shBrushJava.js' type='text/javascript'></script>
+    <script src='party/syntaxhighlighter3/scripts/shBrushBash.js' type='text/javascript'></script>
+    <script src='party/syntaxhighlighter3/scripts/shBrushCpp.js' type='text/javascript'></script>
+    <script src='party/syntaxhighlighter3/scripts/shBrushPhp.js' type='text/javascript'></script>
+    <script src='party/syntaxhighlighter3/scripts/shBrushPython.js' type='text/javascript'></script>
+    <script src='party/syntaxhighlighter3/scripts/shBrushCss.js' type='text/javascript'></script>
+ 
+    <link href='party/syntaxhighlighter3/styles/shCore.css' rel='stylesheet' type='text/css'/>
+    <link href='party/syntaxhighlighter3/styles/shCoreDefault.css' rel='stylesheet' type='text/css'/>
+ 
+    <script tipo="text/javascript">
+		SyntaxHighlighter.config.bloggerMode = false;
+		SyntaxHighlighter.all ();
+	<!-- FIM syntaxhighlighter -->
+		
+		/* faz efeito de digitação no texto. By Micox - elmicox.blogspot.com */
+		digita = function(obj,text,callback){
+			obj = obj.nodeName ? obj : document.getElementById(obj);
+			var len=obj.innerHTML.length;
+			if(len<text.length){
+				obj.innerHTML = text.substring(0,len+1)
+				setTimeout(function(){digita(obj,text,callback)},60);
+
+				//Quando acaba o texto é executado isto
+			//	/*
+				if(len==text.length-1 && callback){
+					callback();
+				}
+				//*/
+			}
+		}
+		var msg = "public class"
+		
+	</script>
+	
+	
+
+	
+  </head>
+
+<body>
+
+<div id='cont'></div>
+<script>
+		digita('cont',msg);
+		//function(){alert('acabou a digitação')}
+</script>
+
+<div class="element" >
+<pre class="brush: java; highlight:[0]">
+public class Hi {
+	public static void main(String[] args) {
+		System.out.println(“Hello World”); 
+	} 
+}
+</pre>
+</div>
+
+
+</body>
+</html>
