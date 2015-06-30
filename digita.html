@@ -21,18 +21,26 @@
     <link href='party/syntaxhighlighter3/styles/shCoreDefault.css' rel='stylesheet' type='text/css'/>
  
     <script tipo="text/javascript">
-		SyntaxHighlighter.config.bloggerMode = false;
-		SyntaxHighlighter.all ();
-	<!-- FIM syntaxhighlighter -->
+		SyntaxHighlighter.config.clipboardSwf = undefined;
+		SyntaxHighlighter.config.stripBrs = false;
+		SyntaxHighlighter.defaults['html-script'] = false;
+		SyntaxHighlighter.defaults['auto-links'] = false;
 		
+		SyntaxHighlighter.config.clipboardSwf = 'http://alexgorbatchev.com/pub/sh/current/scripts/clipboard.swf';
+	
+		SyntaxHighlighter.config.bloggerMode = true;
+		SyntaxHighlighter.all();
+		
+	<!-- FIM syntaxhighlighter -->
+		var tempo = 80;
 		/* faz efeito de digitação no texto. By Micox - elmicox.blogspot.com */
 		digita = function(obj,text,callback){
 			obj = obj.nodeName ? obj : document.getElementById(obj);
 			var len=obj.innerHTML.length;
 			if(len<text.length){
 				obj.innerHTML = text.substring(0,len+1)
-				setTimeout(function(){digita(obj,text,callback)},60);
-
+				setTimeout(function(){digita(obj,text,callback)},tempo);
+				tempo = tempo+ 20;
 				//Quando acaba o texto é executado isto
 			//	/*
 				if(len==text.length-1 && callback){
@@ -41,12 +49,9 @@
 				//*/
 			}
 		}
-		var msg = "public class"
+		var msg = '=IF (AND(A3>=5000000,A3<=5000100),LocalA, IF(AND(A3>=5000101,A3<5001201),LocalB,IF(AND(A3>=5001201,A3<=5002301),LocalC,“Hello World”)))'
 		
 	</script>
-	
-	
-
 	
   </head>
 
