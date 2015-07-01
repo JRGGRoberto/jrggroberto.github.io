@@ -17,8 +17,8 @@ body {
 
 .terminal{
     width: 360px;
-    height: 80px;
-    padding: 7px;
+    height: 100px;
+    padding: 10px;
 	background-color: #1C1C1C;
 	color: #EEEEEE;
 	-moz-border-radius:7px;
@@ -26,8 +26,9 @@ body {
 	border-radius:7px;
 	font: 13px arial, sans-serif;
 	position: absolute;
-    top: 52%;
-    left: 35%;
+    top: 51%;
+    left: 37%;
+    border: 3px solid #FAF2E8;
 	
 	
 }
@@ -47,8 +48,8 @@ body {
 	padding: 0;
 	border-radius:7px;
 	position: absolute;
-    top: 22%;
-    left: 25%;
+    top: 19%;
+    left: 27%;
     width: 520px;
     height: 258px;
     border: 3px solid #8AC007;
