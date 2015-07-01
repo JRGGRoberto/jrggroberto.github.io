@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>JRGG</title>
-	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/styles.css"/>
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
 	
 	<!-- INICIO syntaxhighlighter -->
@@ -30,23 +30,40 @@
 
 <body>
 
-<img class="air" src="img/aviao.png" alt="Avião">
+
 
 
 <div class="element" >
 <pre class="brush: java; highlight:[0]">
-public class Hi {
+/**
+* classe de teste (person)
+*/
+public class MainHuman {
+
 	public static void main(String[] args) {
-		System.out.println(“Hello World”); 
-	} 
+		// TODO Auto-generated method stub
+		Person jrgg = new Person();
+		jrgg.setFirstName("Roberto");
+		jrgg.setLastName("Góes");
+		jrgg.setMail("jrggroberto@gmail.com");
+		jrgg.sayHi();
+	}
 }
+
 </pre>
 </div>
 
-<img src="img/googleplus.png"/>
-<img src="img/linkedin.png"/>
-<img src="img/git.png"/>
+<div class="terminal" >
+Last login: Tue Jun 30 21:52:43 on console<br>
+JRGGAir:~ roberto$  java -jar MainHuman<br>
+Roberto Góes says: Olá!<br>
+JRGGAir:~ roberto$ 	
+</div>
 
+<a href="https://www.linkedin.com/in/jrobertogoes">
+<img src="img/linkedin.png"/><a/>
+
+<!-- blob:https://www.androidify.com/1731805a-91f9-48ac-bc65-31edc029eb3f -->
 
 </body>
 </html>

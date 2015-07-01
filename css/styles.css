@@ -1,3 +1,11 @@
+body {
+	background-color: White;
+	background-image: url(../img/mac-air.png);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: 50% 30%;
+	}
+
 .div1 {
     width: 300px;
     height: 50px;
@@ -5,6 +13,23 @@
     padding: 20px;
 	background-color: navy;
 	color: white;
+}
+
+.terminal{
+    width: 360px;
+    height: 80px;
+    padding: 7px;
+	background-color: #1C1C1C;
+	color: #EEEEEE;
+	-moz-border-radius:7px;
+	-webkit-border-radius:7px;
+	border-radius:7px;
+	font: 13px arial, sans-serif;
+	position: absolute;
+    top: 52%;
+    left: 35%;
+	
+	
 }
 
 .div2 {
@@ -18,13 +43,16 @@
 }
 
 .element {
-	width: 520px;
 	background-color: #E8E8E8;
 	padding: 0;
 	border-radius:7px;
-	position: relative;	
-	left: center;
-    top: 50px;
+	position: absolute;
+    top: 22%;
+    left: 25%;
+    width: 520px;
+    height: 258px;
+    border: 3px solid #8AC007;
+	
 }
 
 .element1 {
