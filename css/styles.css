@@ -1,0 +1,25 @@
+.div1 {
+    width: 300px;
+    height: 50px;
+    border: 1px solid blue;
+    padding: 20px;
+	background-color: navy;
+	color: white;
+}
+
+.div2 {
+    width: 300px;
+    height: 50px;    
+    padding: 20px;
+	border: 2px solid red;
+}
+
+.codeBox
+{
+    width: 80px;
+    height: 50px;
+    overflow: auto;
+    margin: 2px 0;
+    padding: 0;
+    border: solid 1px #65;
+}
